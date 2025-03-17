@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carta para Nicoly</title>
+    <title>Carta para Morena</title>
     <style>
         * {
             margin: 0;
@@ -117,11 +117,23 @@
 </head>
 <body>
     <div class="carta">
-        <h1>Teste H1</h1>
+        <h1>Para a morena do batismo</h1>
         <p>Teste paragrafo</p>
-        <p class="assinatura">Com todo o meu carinho,<br>Teste meu nome</p>
+        <p class="assinatura">Com todo o meu amor e carinho,<br>Teste meu nome</p>
 
-        <button onclick="toggleFoto()">Botãozinho da surpresa rs</button>
+        <button onclick="toggleFoto()">Um super botãozinho</button>
+        <img id="foto-secreta" src="eu_e_morena.jpg" alt="us" class="hidden">
     </div>
+    
+    <script>
+        function toggleFoto() {
+            const foto = document.getElementById('foto-secreta');
+            if (foto.classList.contains('hidden')) {
+                foto.classList.remove('hidden');
+            } else {
+                foto.classList.add('hidden');
+            }
+        }
+    </script>
 </body>
 </html>
