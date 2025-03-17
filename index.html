@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta para Nicoly</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(to right, #ff758c, #ff7eb3);
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .carta {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            max-width: 600px;
+            width: 100%;
+            text-align: justify;
+            line-height: 1.6;
+        }
+
+        h1 {
+            text-align: center;
+            color: #ff758c;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            font-size: 1em;
+        }
+
+        .assinatura {
+            text-align: right;
+            font-style: italic;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        button {
+            display: block;
+            margin: 20px auto;
+            background: #ff758c;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+
+        button:hover {
+            background: #ff7eb3;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        #foto-secreta {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 414px) {
+            h1 {
+                font-size: 1.8em;
+            }
+
+            .carta {
+                padding: 15px;
+            }
+
+            p {
+                font-size: 0.9em;
+            }
+
+            button {
+                width: 100%;
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="carta">
+        <h1>Teste H1</h1>
+        <p>Teste paragrafo</p>
+        <p class="assinatura">Com todo o meu carinho,<br>Teste meu nome</p>
+
+        <button onclick="toggleFoto()">Botãozinho da surpresa rs</button>
+    </div>
+</body>
+</html>
